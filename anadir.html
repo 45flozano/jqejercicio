@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	
+
+</style>
+
+</head>
+
+
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#insertar").click(function(){
+			var x= $("#dato").val();
+          $("#desp").prepend('<td>'+x+'<td>');
+		});
+	});
+</script>
+
+
+<div class="container-fluid"> <h1 class="text-center">AÑADIR ELEMENTOS DOM</h1></div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9"> <input class="form-control" type="text" id="dato"></div>
+		<div class="col-sm-3"> <button class="btn" id="insertar"> INSERTAR</button></div>
+	</div>
+</div>
+<div class="container">
+
+	<table class="table">
+
+		<thead>
+      <tr>
+        <th>NOMBRE COMPLETO</th>
+        
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr id="desp">
+        <td>FRANCISCO CERVANDO LOZANO LOZANO</td>
+        <td>VALERIA LOZANO LOZANO</td>
+       
+      </tr>
+	</table>
+
+</div>
+
+</body>
+</html>
